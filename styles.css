@@ -78,3 +78,39 @@ nav {
   background-position: center;
   background-size: cover;
 }
+
+footer{
+  padding: 4rem 0;
+  background-color: wheat;
+  color: white;
+}
+
+.footer-grid-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  column-gap: 30px;
+}
+
+.footer-items{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  color: white;
+}
+
+.footer-about-me{
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.footer-title{
+  font-size: 1.2rem;
+}
+
+.footer-links a {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-decoration: none;
+  color: white;
+}
