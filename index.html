@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my-portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav>
-        <h4>Amanda.T</h4>
-    </nav>
-    <section>Hero</section>
-    <section>About Me</section>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <nav class="flex justify-between items-center glass">
+        <a class="logo text-[wheat]" href="/">Amanda.T</a>
+        <div
+          class="nav-items text-[wheat] flex justify-start items-center font-bold nav-items h-full w-[80%]"
+        >
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Work</a>
+          <a href="#">Journal</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+      <div class="hero-info overlay text-[wheat] font-bold">
+        <h1 class="hero-title text-4xl">Natext Web Design Agency</h1>
+        <p class="hero-subtext">Your imaginations come to life</p>
+        <div>
+          <button class="btn btn-brown">Get in touch</button>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-row justify-around w-[80%] mx-auto mt-[128px]">
+      <div class="w-[40%]">
+        <div class="h-[600px] w-full about-me-image"></div>
+      </div>
+      <div class="w-[40%] about-me text-white">
+        <div>
+          <span>ABOUT ME</span>
+        </div>
+        <h2>My Story</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem quod repellat id. Illo, natus laudantium? Delectus laborum optio impedit!</p>
+        <h3>My daily passion is Web Design and Development</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius cumque neque nostrum odio consequatur suscipit.</p>
+      </div>
+    </section>
     <section>Services</section>
     <section>Works</section>
     <footer>Footer goes here</footer>
-</body>
+  </body>
 </html>
