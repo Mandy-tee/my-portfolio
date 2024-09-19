@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my-portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="font gowun-batang-regular">
     <section class="hero">
-      <nav class="container mx-auto justify-between items-center glass">
+      <nav class="px-10 mx-auto justify-between items-center glass">
         <a class="logo text-[wheat]" href="/">Amanda.T</a>
         <div
           class="nav-items text-[wheat] flex justify-end items-center font-bold nav-items h-full w-[80%]"
@@ -25,19 +38,19 @@
         <h1 class="hero-title text-4xl">I am Amanda Tagoe</h1>
         <p class="hero-subtext">A Web Developer</p>
         <div>
-          <button class="btn btn-brown">Get in touch</button>
+          <button class="btn bg-brown-500 rounded-3xl hover:bg-brown-700">
+            Get in touch
+          </button>
         </div>
       </div>
     </section>
-    <section class="flex flex-row justify-around w-[80%] mx-auto mt-[128px]">
-      <div class="w-[40%]">
-        <div class="h-[600px] w-full about-me-image"></div>
-      </div>
-      <div class="w-[40%] about-me text-white">
+    <section
+      class="flex flex-row justify-around align-middle w-[80%] mx-auto mt-[128px] about-section"
+    >
+      <div class="w-[30%] about-me text-white">
         <div>
-          <span>ABOUT ME</span>
+          <span class="text-3xl font-bold">ABOUT ME</span>
         </div>
-        <h2>My Story</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias rem
           quod repellat id. Illo, natus laudantium? Delectus laborum optio
@@ -48,14 +61,139 @@
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius cumque
           neque nostrum odio consequatur suscipit.
         </p>
+        <div>
+          <button class="btn bg-brown-500 rounded-3xl hover:bg-brown-700">
+            Get in touch
+          </button>
+        </div>
+      </div>
+      <div class="w-[30%]">
+        <div class="h-[450px] w-full about-me-image"></div>
+      </div>
+      <div class="skills flex flex-col align-middle w-[30%] text-white">
+        <h2 class="mb-4 text-2xl font-bold">Expertise and skills</h2>
+        <div class="skill">
+          <div class="name-figure">
+            <p>HTML</p>
+            <p>85%</p>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="name-figure">
+            <p>CSS</p>
+            <p>90%</p>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-1"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="name-figure">
+            <p>JavaScript</p>
+            <p>60%</p>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-2"></div>
+          </div>
+        </div>
       </div>
     </section>
-    <section>Services</section>
-    <section>Works</section>
+    <section class="service w-[100%] mx-auto">
+      <div class="w-4/5 mx-auto py-10">
+        <h1 class="text-center text-4xl font-bold text-gray-900 py-10">
+          Services
+        </h1>
+        <div class="flex flex-row gap-5">
+          <div
+            class="col-span-1 flex flex-col align-middle justify-center items-center gap-2 p-6"
+          >
+            <i class="fa-solid fa-desktop text-5xl"></i>
+            <h2 class="text-2xl font-semibold">Web Design</h2>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              dolorum.
+            </p>
+          </div>
+          <div
+            class="col-span-1 flex flex-col align-middle justify-center items-center gap-2 p-6"
+          >
+            <i class="fa-solid fa-desktop text-5xl"></i>
+            <h3 class="text-2xl font-semibold">Graphic Design</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              dolorum.
+            </p>
+          </div>
+          <div
+            class="col-span-1 flex flex-col align-middle justify-center items-center gap-2 p-6"
+          >
+            <i class="fa-solid fa-desktop text-5xl"></i>
+            <h3 class="text-2xl font-semibold">Web Apps</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              dolorum.
+            </p>
+          </div>
+          <div
+            class="col-span-1 flex flex-col align-middle justify-center items-center gap-2 p-6"
+          >
+            <i class="fa-solid fa-desktop text-5xl"></i>
+            <h3 class="text-2xl font-semibold">Ecommerce</h3>
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+              dolorum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="py-20">
+        <h1 class="text-center text-4xl font-bold text-gray-900">Works</h1>
+        <div class="grid grid-cols-3 gap-6 w-[80%] mx-auto">
+          <div class="work-box">
+            <img src="./assets/work1.png" alt="work1" class="w-full" />
+          </div>
+          <div class="work-box">
+            <img src="./assets/work2.png" alt="work2" class="w-full" />
+          </div>
+          <div class="work-box">
+            <img src="./assets/work3.png" alt="work3" class="w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div
+        class="text-white flex justify-between gap-10 w-[60%] mx-auto my-[40px]"
+      >
+        <div class="text-center">
+          <i class="fa-regular fa-face-smile font-bold text-3xl"></i>
+          <p class="font-semibold">77</p>
+          <p>Happy Clients</p>
+        </div>
+
+        <div class="text-center">
+          <i class="fa-solid fa-code font-bold text-3xl"></i>
+          <p class="font-semibold">500,000</p>
+          <p>Lines of Codes</p>
+        </div>
+
+        <div class="text-center">
+          <i class="fa-solid fa-desktop font-bold text-3xl"></i>
+
+          <p class="font-semibold">200</p>
+          <p>Completed Projects</p>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="footer-grid-container">
         <div class="footer-items footer-about-me">
-          <span class="footer-title">About Me</span>
+          <span class="footer-title font-bold">About Me</span>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
             quisquam porro placeat animi eius distinctio aliquid minus corrupti
@@ -63,21 +201,19 @@
           </p>
         </div>
         <div>
-          <span class="footer-title">Features</span>
+          <span class="footer-title font-bold">Quick Links</span>
           <div class="footer-links">
             <a href="#">About Me</a>
             <a href="#">Services</a>
-            <a href="#">Services</a>
+            <a href="#">Testimonials</a>
             <a href="#">Contact</a>
           </div>
         </div>
         <div class="footer-items">
-          <span class="footer-title">Follow Me</span>
-          <ul></ul>
-        </div>
-        <div>
-          <span class="footer-title">Subscribe</span>
-          <ul></ul>
+          <span class="footer-title font-bold">Connect</span>
+          <i class="fa-brands fa-facebook text-2xl"></i>
+          <i class="fa-brands fa-square-whatsapp text-2xl"></i>
+          <i class="fa-brands fa-linkedin text-2xl"></i>
         </div>
       </div>
     </footer>
