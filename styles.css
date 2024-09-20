@@ -44,13 +44,14 @@ nav {
 }
 
 .hero {
-  background-image: url(./assets/hero-bg2.png);
+  background-image: url(./assets/hero-bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1550px 700px;
   background-position: center;
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0.9;
   /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,6 +89,7 @@ nav {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+  color: whitesmoke;
 }
 
 .about-me-image {
@@ -99,7 +101,7 @@ nav {
 footer {
   padding: 4rem 0;
   background-color: rgb(43, 42, 41);
-  color: white;
+  color: wheat;
 }
 
 .footer-grid-container {
@@ -112,7 +114,7 @@ footer {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  color: white;
+  color: wheat;
 }
 
 .footer-about-me {
@@ -129,17 +131,18 @@ footer {
   flex-direction: column;
   row-gap: 10px;
   text-decoration: none;
-  color: white;
+  color: wheat;
 }
 
 .service {
   margin-top: 2rem;
   background-color: rgb(99, 93, 83);
-  color: white;
+  color: whitesmoke;
 }
 
 .skill {
   margin-bottom: 50px;
+  color: whitesmoke;
 }
 
 .progress-bar-container {
@@ -171,4 +174,17 @@ footer {
   width: 60%;
   height: 100%;
   background-color: brown;
+}
+
+.stats-section{
+  background-image: url('./assets/work2.png');
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.overl{
+  background-color: rgba(0, 0, 0, 0.6);
 }
