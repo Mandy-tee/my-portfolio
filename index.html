@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-portfolio</title>
+    <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,194 +18,161 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="font gowun-batang-regular">
-    <section class="hero">
-      <nav class="px-10 mx-auto justify-between items-center glass">
-        <a class="logo text-[wheat] font-bold" href="/">Aa.Tagoe</a>
-        <div
-          class="nav-items text-[wheat] flex justify-end items-center font-bold nav-items h-full w-[80%]"
-        >
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Work</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-        </div>
-      </nav>
-      <div class="hero-info p-6 overlay text-[wheat] font-bold">
-        <div class="hero-info-text rotate-in-left">
-          <h1 class="hero-title text-5xl">I am Amanda Tagoe</h1>
-          <p class="hero-subtext text-2xl">A Web Developer</p>
-          <div>
-            <button class="btn bg-brown-500 rounded-3xl hover:bg-brown-700">
-              Get in touch
-            </button>
-          </div>
-        </div>
+  <body class="font-gowun-batang bg-gray-100">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-gray-900 to-gray-700 text-white">
+      <!-- Responsive Navbar -->
+<nav class="bg-gray-900 text-white px-6 py-4">
+  <div class="flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/" class="text-xl font-bold">Aa.Tagoe</a>
+
+    <!-- Hamburger Menu (for small screens) -->
+    <button
+      id="menu-toggle"
+      class="block md:hidden text-2xl focus:outline-none"
+      aria-label="Toggle navigation"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Navigation Links -->
+    <div
+      id="nav-menu"
+      class="hidden md:flex md:items-center md:space-x-4"
+    >
+      <a href="#" class="hover:text-gray-400">Home</a>
+      <a href="#" class="hover:text-gray-400">About</a>
+      <a href="#" class="hover:text-gray-400">Work</a>
+      <a href="#" class="hover:text-gray-400">Services</a>
+      <a href="#" class="hover:text-gray-400">Contact</a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col space-y-2 mt-4 md:hidden">
+    <a href="#" class="block hover:text-gray-400">Home</a>
+    <a href="#" class="block hover:text-gray-400">About</a>
+    <a href="#" class="block hover:text-gray-400">Work</a>
+    <a href="#" class="block hover:text-gray-400">Services</a>
+    <a href="#" class="block hover:text-gray-400">Contact</a>
+  </div>
+</nav>
+
+      <div class="text-center py-20">
+        <h1 class="text-4xl md:text-6xl font-bold">I am Amanda Tagoe</h1>
+        <p class="text-lg md:text-2xl mt-4">A Web Developer</p>
+        <button class="mt-6 px-6 py-2 bg-gray-800 rounded-lg hover:bg-gray-600">
+          Get in touch
+        </button>
       </div>
     </section>
-    <section
-      class="flex flex-row justify-around align-middle w-[80%] mx-auto mt-[128px] about-section"
-    >
-      <div class="w-[30%] about-me text-white">
-        <div>
-          <span class="text-3xl font-bold">ABOUT ME</span>
-        </div>
-        <p>
-          A passionate web developer with a love for creating engaging and user-friendly digital experiences. I believe in the power of collaboration and enjoy working closely with designers, clients, and fellow developers to create solutions that meet real user needs. When I am not coding, you can find me exploring the latest tech trends, contributing to open-source projects, or watching an interesting documentary.
-        </p>
-        <p>
-          Let’s connect and see how we can work together to build something amazing!
-        </p>
-        <div>
-          <button class="btn bg-brown-500 rounded-3xl hover:bg-brown-700">
+
+    <!-- About Section -->
+    <section class="py-16 px-6 md:px-12 bg-white text-gray-800">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
+        <div >
+          <h2 class="text-3xl font-bold mb-4">ABOUT ME</h2>
+          <p>
+            A passionate web developer with a love for creating engaging and user-friendly digital experiences. I believe in the power of collaboration and enjoy working closely with designers, clients, and fellow developers to create solutions that meet real user needs.
+          </p>
+          <p class="mt-4">
+            Let’s connect and see how we can work together to build something amazing!
+          </p>
+          <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">
             View CV
           </button>
         </div>
-      </div>
-      <div class="w-[30%]">
-        <div class="h-[450px] w-full about-me-image"></div>
-      </div>
-      <div class="skills flex flex-col align-middle w-[30%] text-white">
-        <h2 class="mb-4 text-2xl font-bold">Expertise and skills</h2>
-        <div class="skill">
-          <div class="name-figure">
-            <p>HTML</p>
-            <p>85%</p>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="name-figure">
-            <p>CSS</p>
-            <p>90%</p>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-1"></div>
-          </div>
-        </div>
-        <div class="skill">
-          <div class="name-figure">
-            <p>JavaScript</p>
-            <p>60%</p>
-          </div>
-          <div class="progress-bar-container">
-            <div class="progress-2"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="service w-[100%] mx-auto">
-      <div class="w-4/5 mx-auto py-10">
-        <h1 class="text-center text-6xl font-bold text-gray-900 py-10">
-          Services
-        </h1>
-        <div class="flex flex-row gap-5">
-          <div
-            class="col-span-1 flex flex-col align-middle justify-center items-center gap-2 p-6 bg-black hover:bg-[white] hover:text-black"
-          >
-            <i class="fa-solid fa-desktop text-5xl"></i>
-            <h2 class="text-2xl font-semibold">Web Design</h2>
-            <p class="text-center">
-              Comprehensive web design services that blend creativity with functionality.
-            </p>
-          </div>
-          <div
-            class="col-span-1 flex flex-col align-middle justify-center items-center gap-2 p-6 bg-black hover:bg-[white] hover:text-black"
-          >
-            <i class="fa-solid fa-desktop text-5xl"></i>
-            <h3 class="text-2xl font-semibold">Graphic Design</h3>
-            <p class="text-center">
-              Creating stunning logos, branding materials and designing websites or social media
-            </p>
-          </div>
-          <div
-            class="col-span-1 flex flex-col align-middle justify-center items-center gap-2 p-6 bg-black hover:bg-[white] hover:text-black"
-          >
-            <i class="fa-solid fa-desktop text-5xl"></i>
-            <h3 class="text-2xl font-semibold">Web Apps</h3>
-            <p class="text-center">
-              Developing robust and scalable web applications tailored to your business needs.
-            </p>
-          </div>
-          <div
-            class="col-span-1 flex flex-col align-middle justify-center items-center gap-2 p-6 bg-black hover:bg-[white] hover:text-black"
-          >
-            <i class="fa-solid fa-desktop text-5xl"></i>
-            <h3 class="text-2xl font-semibold">Ecommerce</h3>
-            <p class="text-center">
-              Creating dynamic eCommerce solutions that empower businesses to thrive online.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="py-20">
-        <h1 class="text-center text-6xl font-bold text-gray-900 mb-10">
-          Works
-        </h1>
-        <div class="grid grid-cols-3 gap-6 w-[80%] mx-auto">
-          <div class="work-box">
-            <img src="./assets/work1.png" alt="work1" class="w-full" />
-          </div>
-          <div class="work-box">
-            <img src="./assets/work2.png" alt="work2" class="w-full" />
-          </div>
-          <div class="work-box">
-            <img src="./assets/work3.png" alt="work3" class="w-full" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="stats-section">
-      <div
-        class="text-white overl flex align-middle items-center h-[200px] justify-center gap-[300px] w-[100%] mx-auto my-[40px]"
-      >
-        <div class="text-center">
-          <i class="fa-regular fa-face-smile font-bold text-3xl"></i>
-          <p class="font-semibold">77</p>
-          <p>Happy Clients</p>
-        </div>
-
-        <div class="text-center">
-          <i class="fa-solid fa-code font-bold text-3xl"></i>
-          <p class="font-semibold">500,000</p>
-          <p>Lines of Codes</p>
-        </div>
-
-        <div class="text-center">
-          <i class="fa-solid fa-desktop font-bold text-3xl"></i>
-
-          <p class="font-semibold">200</p>
-          <p>Completed Projects</p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="w-[70%] mx-auto footer-grid-container">
-        <div class="footer-items footer-about-me">
-          <span class="footer-title font-bold">About Me</span>
-          <p>
-            I thrive on challenges and enjoy problem-solving, whether it is debugging a tricky piece of code or designing a new feature from scratch. My toolkit includes HTML, CSS, JavaScript, and various frameworks like React and Node.js, which I leverage to bring ideas to life.
-          </p>
+        <div class="w-full  bg-gray-300">
+          <img src="./assets/about-me-image.png"  alt="profile pic"/>
         </div>
         <div>
-          <span class="footer-title font-bold">Quick Links</span>
-          <div class="footer-links mt-8">
-            <a href="#">About Me</a>
-            <a href="#">Services</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Contact</a>
+          <h3 class="text-2xl font-bold mb-4">Expertise and Skills</h3>
+          <div class="space-y-4">
+            <div>
+              <p class="flex justify-between"><span>HTML</span><span>85%</span></p>
+              <div class="w-full bg-gray-200 h-2">
+                <div class="bg-gray-800 h-2 w-4/5"></div>
+              </div>
+            </div>
+            <div>
+              <p class="flex justify-between"><span>CSS</span><span>90%</span></p>
+              <div class="w-full bg-gray-200 h-2">
+                <div class="bg-gray-800 h-2 w-[90%]"></div>
+              </div>
+            </div>
+            <div>
+              <p class="flex justify-between"><span>JavaScript</span><span>60%</span></p>
+              <div class="w-full bg-gray-200 h-2">
+                <div class="bg-gray-800 h-2 w-3/5"></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="footer-items">
-          <span class="footer-title font-bold">Connect</span>
-          <div class="socials flex gap-10">
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-16 bg-gray-100">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-8">Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 px-6">
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <i class="fa-solid fa-desktop text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+            <p>Comprehensive web design services that blend creativity with functionality.</p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <i class="fa-solid fa-desktop text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Graphic Design</h3>
+            <p>Creating stunning logos and branding materials for digital platforms.</p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <i class="fa-solid fa-desktop text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">Web Apps</h3>
+            <p>Developing robust web applications tailored to business needs.</p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+            <i class="fa-solid fa-desktop text-4xl mb-4"></i>
+            <h3 class="text-xl font-semibold mb-2">E-commerce</h3>
+            <p>Dynamic eCommerce solutions to help businesses thrive online.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Works -->
+    <section class="py-16 bg-white">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-8">Works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+          <img src="./assets/work1.png" alt="work1" class="w-full rounded-lg shadow-lg" />
+          <img src="./assets/work2.png" alt="work2" class="w-full rounded-lg shadow-lg" />
+          <img src="./assets/work3.png" alt="work3" class="w-full rounded-lg shadow-lg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+        <div>
+          <h3 class="text-lg font-bold mb-4">About Me</h3>
+          <p>I thrive on challenges, enjoy problem-solving, and bring ideas to life with tools like React and Node.js.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-gray-400">About Me</a></li>
+            <li><a href="#" class="hover:text-gray-400">Services</a></li>
+            <li><a href="#" class="hover:text-gray-400">Testimonials</a></li>
+            <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Connect</h3>
+          <div class="flex space-x-4">
             <i class="fa-brands fa-facebook text-2xl"></i>
             <i class="fa-brands fa-square-whatsapp text-2xl"></i>
             <i class="fa-brands fa-linkedin text-2xl"></i>
@@ -213,5 +180,15 @@
         </div>
       </div>
     </footer>
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const navMenu = document.getElementById('nav-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+    
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+    
   </body>
 </html>
