@@ -1,194 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="font-gowun-batang bg-gray-100">
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-gray-900 to-gray-700 text-white">
-      <!-- Responsive Navbar -->
-<nav class="bg-gray-900 text-white px-6 py-4">
-  <div class="flex justify-between items-center">
-    <!-- Logo -->
-    <a href="/" class="text-xl font-bold">Aa.Tagoe</a>
 
-    <!-- Hamburger Menu (for small screens) -->
-    <button
-      id="menu-toggle"
-      class="block md:hidden text-2xl focus:outline-none"
-      aria-label="Toggle navigation"
-    >
-      <i class="fa-solid fa-bars"></i>
-    </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-    <!-- Navigation Links -->
-    <div
-      id="nav-menu"
-      class="hidden md:flex md:items-center md:space-x-4"
-    >
-      <a href="#" class="hover:text-gray-400">Home</a>
-      <a href="#" class="hover:text-gray-400">About</a>
-      <a href="#" class="hover:text-gray-400">Work</a>
-      <a href="#" class="hover:text-gray-400">Services</a>
-      <a href="#" class="hover:text-gray-400">Contact</a>
+<body class="font-gowun-batang bg-gray-100">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-gray-900 to-gray-700 text-white">
+    <!-- Responsive Navbar -->
+    <nav id="navbar"
+      class="fixed top-0 left-0 w-full bg-gray-900 bg-opacity-80 backdrop-blur-md text-white px-6 py-4 transition-all duration-300">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <a href="/" class="text-xl font-bold">Aa.Tagoe</a>
+
+        <!-- Hamburger Menu (for small screens) -->
+        <button id="menu-toggle" class="block md:hidden text-2xl focus:outline-none" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navigation Links -->
+        <div id="nav-menu" class="hidden md:flex md:items-center md:space-x-4">
+          <a href="#" class="hover:text-gray-400">Home</a>
+          <a href="#about" class="hover:text-gray-400">About</a>
+          <a href="#works" class="hover:text-gray-400">Works</a>
+          <a href="#services" class="hover:text-gray-400">Services</a>
+          <a href="#contact" class="hover:text-gray-400">Contact</a>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden flex-col space-y-2 mt-4 md:hidden">
+        <a href="#" class="block hover:text-gray-400">Home</a>
+        <a href="#about" class="block hover:text-gray-400">About</a>
+        <a href="#works" class="block hover:text-gray-400">Works</a>
+        <a href="#services" class="block hover:text-gray-400">Services</a>
+        <a href="#contact" class="block hover:text-gray-400">Contact</a>
+      </div>
+    </nav>
+
+    <div class="text-center py-20">
+      <h1 class="text-4xl md:text-6xl font-bold">I am Amanda Tagoe</h1>
+      <p class="text-lg md:text-2xl mt-4">A Web Developer</p>
+      <button class="mt-6 px-6 py-2 bg-gray-800 rounded-lg hover:bg-gray-600">
+        Get in touch
+      </button>
     </div>
-  </div>
+  </section>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden flex-col space-y-2 mt-4 md:hidden">
-    <a href="#" class="block hover:text-gray-400">Home</a>
-    <a href="#" class="block hover:text-gray-400">About</a>
-    <a href="#" class="block hover:text-gray-400">Work</a>
-    <a href="#" class="block hover:text-gray-400">Services</a>
-    <a href="#" class="block hover:text-gray-400">Contact</a>
-  </div>
-</nav>
-
-      <div class="text-center py-20">
-        <h1 class="text-4xl md:text-6xl font-bold">I am Amanda Tagoe</h1>
-        <p class="text-lg md:text-2xl mt-4">A Web Developer</p>
-        <button class="mt-6 px-6 py-2 bg-gray-800 rounded-lg hover:bg-gray-600">
-          Get in touch
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 md:px-12 bg-white text-gray-800">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">ABOUT ME</h2>
+        <p>
+          A passionate web developer with a love for creating engaging and user-friendly digital experiences. I
+          believe
+          in the power of collaboration and enjoy working closely with designers, clients, and fellow developers to
+          create solutions that meet real user needs.
+        </p>
+        <p class="mt-4">
+          Let’s connect and see how we can work together to build something amazing!
+        </p>
+        <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">
+          View CV
         </button>
       </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="py-16 px-6 md:px-12 bg-white text-gray-800">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 place-items-center">
-        <div >
-          <h2 class="text-3xl font-bold mb-4">ABOUT ME</h2>
-          <p>
-            A passionate web developer with a love for creating engaging and user-friendly digital experiences. I believe in the power of collaboration and enjoy working closely with designers, clients, and fellow developers to create solutions that meet real user needs.
-          </p>
-          <p class="mt-4">
-            Let’s connect and see how we can work together to build something amazing!
-          </p>
-          <button class="mt-4 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-600">
-            View CV
-          </button>
-        </div>
-        <div class="w-full  bg-gray-300">
-          <img src="./assets/about-me-image.png"  alt="profile pic"/>
-        </div>
-        <div>
-          <h3 class="text-2xl font-bold mb-4">Expertise and Skills</h3>
-          <div class="space-y-4">
-            <div>
-              <p class="flex justify-between"><span>HTML</span><span>85%</span></p>
-              <div class="w-full bg-gray-200 h-2">
-                <div class="bg-gray-800 h-2 w-4/5"></div>
-              </div>
+      <div class="w-full  bg-gray-300">
+        <img src="./assets/about-me-image.png" alt="profile pic" />
+      </div>
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Expertise and Skills</h3>
+        <div class="space-y-4">
+          <div>
+            <p class="flex justify-between"><span>HTML</span><span>85%</span></p>
+            <div class="w-full bg-gray-200 h-2">
+              <div class="bg-gray-800 h-2 w-4/5"></div>
             </div>
-            <div>
-              <p class="flex justify-between"><span>CSS</span><span>90%</span></p>
-              <div class="w-full bg-gray-200 h-2">
-                <div class="bg-gray-800 h-2 w-[90%]"></div>
-              </div>
+          </div>
+          <div>
+            <p class="flex justify-between"><span>CSS</span><span>90%</span></p>
+            <div class="w-full bg-gray-200 h-2">
+              <div class="bg-gray-800 h-2 w-[90%]"></div>
             </div>
-            <div>
-              <p class="flex justify-between"><span>JavaScript</span><span>60%</span></p>
-              <div class="w-full bg-gray-200 h-2">
-                <div class="bg-gray-800 h-2 w-3/5"></div>
-              </div>
+          </div>
+          <div>
+            <p class="flex justify-between"><span>JavaScript</span><span>60%</span></p>
+            <div class="w-full bg-gray-200 h-2">
+              <div class="bg-gray-800 h-2 w-3/5"></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Services -->
-    <section class="py-16 bg-gray-100">
-      <div class="text-center">
-        <h2 class="text-4xl font-bold mb-8">Services</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 px-6">
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-            <i class="fa-solid fa-desktop text-4xl mb-4"></i>
-            <h3 class="text-xl font-semibold mb-2">Web Design</h3>
-            <p>Comprehensive web design services that blend creativity with functionality.</p>
-          </div>
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-            <i class="fa-solid fa-desktop text-4xl mb-4"></i>
-            <h3 class="text-xl font-semibold mb-2">Graphic Design</h3>
-            <p>Creating stunning logos and branding materials for digital platforms.</p>
-          </div>
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-            <i class="fa-solid fa-desktop text-4xl mb-4"></i>
-            <h3 class="text-xl font-semibold mb-2">Web Apps</h3>
-            <p>Developing robust web applications tailored to business needs.</p>
-          </div>
-          <div class="bg-white shadow-lg rounded-lg p-6 text-center">
-            <i class="fa-solid fa-desktop text-4xl mb-4"></i>
-            <h3 class="text-xl font-semibold mb-2">E-commerce</h3>
-            <p>Dynamic eCommerce solutions to help businesses thrive online.</p>
-          </div>
+  <!-- Services -->
+  <section id="services" class="py-16 bg-gray-100">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold mb-8">Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 px-6">
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="fa-solid fa-desktop text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <p>Comprehensive web design services that blend creativity with functionality.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="fa-solid fa-desktop text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+          <p>Creating stunning logos and branding materials for digital platforms.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="fa-solid fa-desktop text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Web Apps</h3>
+          <p>Developing robust web applications tailored to business needs.</p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+          <i class="fa-solid fa-desktop text-4xl mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">E-commerce</h3>
+          <p>Dynamic eCommerce solutions to help businesses thrive online.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Works -->
-    <section class="py-16 bg-white">
-      <div class="text-center">
-        <h2 class="text-4xl font-bold mb-8">Works</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
-          <img src="./assets/work1.png" alt="work1" class="w-full rounded-lg shadow-lg" />
-          <img src="./assets/work2.png" alt="work2" class="w-full rounded-lg shadow-lg" />
-          <img src="./assets/work3.png" alt="work3" class="w-full rounded-lg shadow-lg" />
+  <!-- Works -->
+  <section id="works" class="py-16 bg-white">
+    <div class="text-center">
+      <h2 class="text-4xl font-bold mb-8">Works</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+        <img src="./assets/work1.png" alt="work1" class="w-full rounded-lg shadow-lg" />
+        <img src="./assets/work2.png" alt="work2" class="w-full rounded-lg shadow-lg" />
+        <img src="./assets/work3.png" alt="work3" class="w-full rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-6 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+      <p class="text-gray-600 mb-6">
+        Feel free to reach out by filling the form below. I will get back to you as soon as possible.
+      </p>
+      <form id="contactForm" action="https://formsubmit.co/nayork77@gmail.com" method="POST" class="space-y-6"
+        novalidate>
+        <!-- Name -->
+        <div>
+          <label for="name" class="block text-left text-gray-700 font-medium mb-2">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+            required />
+          <p class="text-red-500 text-sm hidden" id="nameError">Please enter your name.</p>
+        </div>
+        <!-- Email -->
+        <div>
+          <label for="email" class="block text-left text-gray-700 font-medium mb-2">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+            required />
+          <p class="text-red-500 text-sm hidden" id="emailError">Please enter a valid email.</p>
+        </div>
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-left text-gray-700 font-medium mb-2">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message" rows="5"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+            required></textarea>
+          <p class="text-red-500 text-sm hidden" id="messageError">Please enter a message.</p>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-600">
+          Send Message
+        </button>
+      </form>
+
+      <!-- Success Message -->
+      <div id="formSuccess" class="hidden mt-6 text-green-600 text-center font-semibold">
+        Thank you! Your message has been sent successfully.
+      </div>
+
+      <!-- Personal Contact Info -->
+      <div class="mt-8 text-gray-600">
+        <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+        <p class="mb-2">Email: <a href="mailto:nayork77@gmail.com"
+            class="text-gray-800 hover:underline">nayork77@gmail.com</a></p>
+        <p>Phone: <a href="tel:+233242555080" class="text-gray-800 hover:underline">+233 242555080</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+      <div>
+        <h3 class="text-lg font-bold mb-4">About Me</h3>
+        <p>I thrive on challenges, enjoy problem-solving, and bring ideas to life with tools like React and Node.js.
+        </p>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#about" class="hover:text-gray-400">About Me</a></li>
+          <li><a href="#services" class="hover:text-gray-400">Services</a></li>
+          <li><a href="#" class="hover:text-gray-400">Testimonials</a></li>
+          <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-bold mb-4">Connect</h3>
+        <div class="flex space-x-4">
+          <i class="fa-brands fa-facebook text-2xl"></i>
+          <i class="fa-brands fa-square-whatsapp text-2xl"></i>
+          <i class="fa-brands fa-linkedin text-2xl"></i>
         </div>
       </div>
-    </section>
+    </div>
+  </footer>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
-        <div>
-          <h3 class="text-lg font-bold mb-4">About Me</h3>
-          <p>I thrive on challenges, enjoy problem-solving, and bring ideas to life with tools like React and Node.js.</p>
-        </div>
-        <div>
-          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:text-gray-400">About Me</a></li>
-            <li><a href="#" class="hover:text-gray-400">Services</a></li>
-            <li><a href="#" class="hover:text-gray-400">Testimonials</a></li>
-            <li><a href="#" class="hover:text-gray-400">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="text-lg font-bold mb-4">Connect</h3>
-          <div class="flex space-x-4">
-            <i class="fa-brands fa-facebook text-2xl"></i>
-            <i class="fa-brands fa-square-whatsapp text-2xl"></i>
-            <i class="fa-brands fa-linkedin text-2xl"></i>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <script>
-      const menuToggle = document.getElementById('menu-toggle');
-      const navMenu = document.getElementById('nav-menu');
-      const mobileMenu = document.getElementById('mobile-menu');
-    
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    </script>
-    
-  </body>
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('bg-gray-900', 'shadow-lg', 'bg-opacity-90');
+      } else {
+        navbar.classList.remove('bg-gray-900', 'shadow-lg', 'bg-opacity-90');
+      }
+    });
+  </script>
+
+  <!-- Validation and Interaction Script -->
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const messageInput = document.getElementById('message');
+
+    const nameError = document.getElementById('nameError');
+    const emailError = document.getElementById('emailError');
+    const messageError = document.getElementById('messageError');
+    const formSuccess = document.getElementById('formSuccess');
+
+    contactForm.addEventListener('submit', (e) => {
+      let isValid = true;
+
+      // Validate Name
+      if (nameInput.value.trim() === '') {
+        nameError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        nameError.classList.add('hidden');
+      }
+
+      // Validate Email
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(emailInput.value.trim())) {
+        emailError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        emailError.classList.add('hidden');
+      }
+
+      // Validate Message
+      if (messageInput.value.trim() === '') {
+        messageError.classList.remove('hidden');
+        isValid = false;
+      } else {
+        messageError.classList.add('hidden');
+      }
+
+      // Prevent form submission if validation fails
+      if (!isValid) {
+        e.preventDefault();
+        return;
+      }
+
+      // Show Confirmation Message
+      formSuccess.classList.remove('hidden');
+
+      // Hide Confirmation Message after 5 seconds
+      setTimeout(() => {
+        formSuccess.classList.add('hidden');
+      }, 5000);
+
+      // Reset form fields
+      contactForm.reset();
+    });
+  </script>
+</body>
+
 </html>

@@ -248,3 +248,13 @@ footer {
 .overl{
   background-color: rgba(0, 0, 0, 0.6);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Backdrop blur for glass effect */
+nav {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
