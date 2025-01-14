@@ -49,6 +49,7 @@ nav {
   background-size: 1500px 600px;
   background-position: center;
 }
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0.9;
@@ -60,8 +61,8 @@ nav {
 }
 
 .rotate-in-left {
-	-webkit-animation: rotate-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 both;
-	        animation: rotate-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 both;
+  -webkit-animation: rotate-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 both;
+  animation: rotate-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 both;
 }
 
 /* ----------------------------------------------
@@ -76,35 +77,38 @@ nav {
  * animation rotate-in-left
  * ----------------------------------------
  */
- @-webkit-keyframes rotate-in-left {
+@-webkit-keyframes rotate-in-left {
   0% {
     -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
     -webkit-transform-origin: left;
-            transform-origin: left;
+    transform-origin: left;
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     -webkit-transform-origin: left;
-            transform-origin: left;
+    transform-origin: left;
     opacity: 1;
   }
 }
+
 @keyframes rotate-in-left {
   0% {
     -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
     -webkit-transform-origin: left;
-            transform-origin: left;
+    transform-origin: left;
     opacity: 0;
   }
+
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     -webkit-transform-origin: left;
-            transform-origin: left;
+    transform-origin: left;
     opacity: 1;
   }
 }
@@ -120,7 +124,8 @@ nav {
   row-gap: 20px;
   height: 90vh;
 }
-.hero-info-text{
+
+.hero-info-text {
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -128,6 +133,7 @@ nav {
   justify-content: center;
   align-items: center;
 }
+
 .btn {
   padding: 16px 24px;
   border-radius: 4px;
@@ -135,6 +141,7 @@ nav {
   color: white;
   border-radius: 30px;
 }
+
 .btn:hover {
   background-color: rgb(99, 11, 11);
 }
@@ -236,16 +243,16 @@ footer {
   background-color: brown;
 }
 
-.stats-section{
+.stats-section {
   background-image: url('./assets/work2.png');
   height: 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
+
 }
 
-.overl{
+.overl {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
